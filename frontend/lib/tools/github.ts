@@ -3,8 +3,8 @@
  * Provides repository operations, issue management, and code search
  */
 
-// Default GitHub username - can be overridden
-const DEFAULT_GITHUB_USERNAME = 'HoneyPaptan';
+// No implicit default username; callers should provide an explicit GitHub handle or owner/repo.
+const DEFAULT_GITHUB_USERNAME = '';
 
 /**
  * Parses GitHub URL to extract owner and repository name
@@ -114,7 +114,7 @@ interface GitHubIssue {
 
 /**
  * Get GitHub user or organization repositories
- * @param username - GitHub username, organization name, or GitHub URL (defaults to HoneyPaptan)
+ * @param username - GitHub username, organization name, or GitHub URL
  * @param maxRepos - Maximum number of repos to fetch (default: 10)
  */
 export async function getGitHubRepos(

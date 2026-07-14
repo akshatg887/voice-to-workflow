@@ -98,7 +98,7 @@ export function ConfigModal({ open, onClose, onSubmit, workflowNodes }: ConfigMo
               <Label htmlFor="githubRepoUrl" className="text-white">GitHub Repository</Label>
               <Input
                 id="githubRepoUrl"
-                placeholder="e.g., HoneyPaptan/my-repo or https://github.com/owner/repo"
+                placeholder="e.g., your-username/my-repo or https://github.com/owner/repo"
                 value={config.githubRepoUrl}
                 onChange={(e) =>
                   setConfig({ ...config, githubRepoUrl: e.target.value })

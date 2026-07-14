@@ -163,7 +163,7 @@ async function executeGitHubNode(
     const usernameOrUrl = params?.username || params?.owner || params?.url || params?.repo_url;
     const maxRepos = params?.max_repos || params?.maxRepos || 10;
 
-    console.log(`📦 GitHub repos request - Username/URL: ${usernameOrUrl || 'default (HoneyPaptan)'}`);
+    console.log(`📦 GitHub repos request - Username/URL: ${usernameOrUrl || 'not provided'}`);
     
     const result = await getGitHubRepos(usernameOrUrl, maxRepos);
 

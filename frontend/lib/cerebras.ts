@@ -141,7 +141,7 @@ PARAMETER GUIDELINES:
 - Include required parameters for each action (see AUTHORIZED NODES section)
 - Optional parameters can be omitted unless user specifies them
 - Use descriptive parameter values based on user command
-- For GitHub get_repos: default username "HoneyPaptan" if not specified
+- For GitHub get_repos: require an explicit username or repository URL if not specified
 
 PARALLEL EXECUTION:
 When user says "at the same time", "parallel", "simultaneously", "both":
